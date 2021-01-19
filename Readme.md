@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ксения Дубенецкая](https://up.htmlacademy.ru/htmlcss/30/user/845655).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
