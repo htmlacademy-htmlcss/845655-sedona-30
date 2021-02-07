@@ -118,12 +118,9 @@ img {
     font-weight: 700;
 }
 
-.reasons__intro,
-.reasons__city-list-item p,
-.reasons__list-item_background_grey p, 
-.hotel-results__list p {
-   color: var(--basic-light-black);
-}
+.reasons__intro {
+    color: var(--basic-light-black);
+ }
 
 .reasons__list{
     list-style: none;
@@ -135,8 +132,8 @@ img {
     color: var(--basic-white);
     text-align: center;
 }
-.reasons__list-item1{}
-.reasons__list-item2{}
+.reasons__list-item_real-town{}
+.reasons__list-item_devils-bridge{}
 
 .reasons__list-item-title {
     font-size: 21px;
@@ -155,26 +152,17 @@ img {
     background-color: var(--basic-white);
     color: var(--basic-black);
 }
+.reasons__city-list-item p {
+    color: var(--basic-light-black);
+ }
+.reasons__list-item_background_grey p {
+    color: var(--basic-light-black);
+ } 
 
 .reasons__city-list-item-title{
     font-size: 21px;
     font-weight: 700;
 }
-
-.reasons__city-list-icon{}
-.reasons__city-list-icon_1{
-    background: url("../img/icon-1.svg") no-repeat center;
-    height: 72px;
-}
-.reasons__city-list-icon_2{
-    background: url("../img/icon-2.svg") no-repeat center;
-    height: 70px;
-}
-.reasons__city-list-icon_3{
-    background: url("../img/icon-3.svg") no-repeat center;
-    height: 77px;
-}
-
 
 /* Seach hotel */
 
@@ -417,6 +405,9 @@ img {
 .hotel-results__list{
     list-style: none;
 }
+.hotel-results__list p {
+    color: var(--basic-light-black);
+ }
 .hotel-results__item{
     border-top: 1px solid var(--basic-light-line);
     border-bottom: 1px solid var(--basic-light-line);
