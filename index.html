@@ -27,23 +27,25 @@
 
     <main class="wrapper">
       <section class="greeting">
-        <h1>Добро пожаловать в Седону!</h1>
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <img src="img/welcome.svg" width="457" height="351" alt="Welcome to the gorgeous Sedona"> 
       </section>
 
       <section class="reasons">
-        <h2>Информация о Седоне</h2>
+        <h2 class="visually-hidden">Информация о Седоне</h2>
         <p class="reasons__intro-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
         <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="reasons__list">
-          <li class="reasons__list-item reasons__list-item_real-town">
-            <h3 class="reasons__list-item-title">Настоящий<br>городок</h3>
-            <p>&ndash;№1&ndash;</p>
-            <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
-            <div>
-              <img src="img/image-1.jpg" width="800" height="256" alt="Город Седона">
+          <li class="reasons__list-item_real-town">
+            <div class="reasons__list-item_content">
+              <h3 class="reasons__list-item-title">Настоящий<br>городок</h3>
+              <p>&ndash;№1&ndash;</p>
+              <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
             </div>
+            <img src="img/image-1.jpg" width="800" height="256" alt="Город Седона">
+          </li>
 
+          <li>
             <ul class="reasons__city-list">
               <li class="reasons__city-list-item">
                 <h4 class="reasons__city-list-item-title reasons__city-list-item-title_icon-housing">Жильё</h4>
@@ -60,32 +62,36 @@
               </li>
             </ul>
           </li>
-
-          <li class="reasons__list-item reasons__list-item_devils-bridge">
-            <h3 class="reasons__list-item-title">Там есть<br>Мост дьявола</h3>
-            <p>&ndash;№2&ndash;</p>
-            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-            <div>
-              <img src="img/image-2.jpg" width="800" height="256" alt="Мост Дьявола">
+          
+          <li class="reasons__list-item_devils-bridge">
+            <div class="reasons__list-item_content">
+              <h3 class="reasons__list-item-title">Там есть<br>Мост дьявола</h3>
+              <p>&ndash;№2&ndash;</p>
+              <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
             </div>
-          </li>
+            <img src="img/image-2.jpg" width="800" height="256" alt="Мост Дьявола">
+          </li> 
+          
+          <li>
+            <ul class="reasons__list-other-reasons">
+              <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-3">
+                <h3 class="reasons__list-item-title">Небольшая<br>площадь</h3>
+                <p>&ndash;№3&ndash;</p>
+                <p>все достопримечательности<br>находятся очень близко</p>
+              </li>
 
-          <li class="reasons__list-item reasons__list-item_background_grey">
-            <h3 class="reasons__list-item-title">Небольшая<br>площадь</h3>
-            <p>&ndash;№3&ndash;</p>
-            <p>все достопримечательности<br>находятся очень близко</p>
-          </li>
+              <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-4">
+                <h3 class="reasons__list-item-title">Красивая<br>дорога</h3>
+                <p>&ndash;№4&ndash;</p>
+                <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
+              </li>
 
-          <li class="reasons__list-item reasons__list-item_background_grey">
-            <h3 class="reasons__list-item-title">Красивая<br>дорога</h3>
-            <p>&ndash;№4&ndash;</p>
-            <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
-          </li>
-
-          <li class="reasons__list-item reasons__list-item_background_grey">
-            <h3 class="reasons__list-item-title">Мало<br>туристов</h3>
-            <p>&ndash;№5&ndash;</p>
-            <p>большинство едет в гранд каньон<br>и толпится там</p>
+              <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-5">
+                <h3 class="reasons__list-item-title">Мало<br>туристов</h3>
+                <p>&ndash;№5&ndash;</p>
+                <p>большинство едет в гранд каньон<br>и толпится там</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -94,9 +100,9 @@
         <h2 class="search-hotel__title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="button search-hotel_button" href="blank.html">Поиск гостиницы в Седоне</a>
-        <div class="modal">
-          <h3>Поиск гостиницы в Седоне</h3>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal visually-hidden">
+          <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
+          <form  class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="search-form__item-date">
               <label for="modal-arrival-date">Дата заезда:</label>
               <input class="search-form__date-input" id="modal-arrival-date" type="text" name="arrival-date" value="24 апреля 2017" placeholder="24 апреля 2017">
@@ -130,14 +136,14 @@
 
     <footer class="main-footer">
       <section class="contacts">
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
         <p>&num;visitsedona</p>
         <p>ТЕЛ: <a class="contacts__tel" href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
 
       <section class="social">
-        <h2>Социальные сети</h2>
-        <ul>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
           <li><a class="social__button" href="#"><img src="img/twitter-icon.svg" width="46" height="48" alt="Twitter"></a></li>
           <li><a class="social__button" href="#"><img src="img/facebook-icon.svg" width="46" height="48" alt="Facebook"></a></li>
           <li><a class="social__button" href="#"><img src="img/youtube-icon.svg" width="46" height="48" alt="YouTube"></a></li>
