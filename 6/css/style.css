@@ -74,13 +74,13 @@ img {
 
 .main-header {
     background-color: var(--basic-white);
+    position: relative;
 }
 
 .menu {
     font-weight: 700;
     padding: 0 73px;
-    padding: 15px 0;
-    position: relative;
+    padding: 15px 73px;
 }
 
 .logo{
@@ -142,38 +142,43 @@ img {
 .reasons__intro-title{
     font-size: 21px;
     font-weight: 700;
+    margin: 0;
+    padding: 48px 0;
 }
 
 .reasons__intro {
     color: var(--basic-light-black);
+    margin: 0;
+    padding: 9px 0 60px;
  }
 
 .reasons__list{
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 1fr 1fr;
-    gap: 0;
 }
 
-.reasons__list-item{
+.reasons__list-item_content {
     line-height: 21px;
     background-color: var(--basic-blue);
     color: var(--basic-white);
     text-align: center;
+    padding: 47px 0 54px;
 }
 
 .reasons__list-item_real-town{
-    grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 2fr;
 }
 
 .reasons__list-item_devils-bridge{
-    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.reasons__list-other-reasons{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -186,6 +191,7 @@ img {
 .reasons__list-item-title {
     font-size: 21px;
     font-weight: 700;
+    margin: 0;
 }
 
 .reasons__list-item_background_grey{
@@ -197,14 +203,13 @@ img {
     list-style: none;
     padding: 0;
     margin: 0;
-    grid-column: 1 / -1;
-    /*тут сделаю как флексы*/
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .reasons__city-list-item{
     background-color: var(--basic-white);
     color: var(--basic-black);
+    padding: 152px 0 68px;
 }
 .reasons__city-list-item p {
     color: var(--basic-light-black);
@@ -218,16 +223,8 @@ img {
     font-weight: 700;
 }
 
-.reasons__list-item_real-town img {
-    grid-column: -3 / -1;
-}
-
-.reasons__list-item_devils-bridge div {
-    grid-column: -2 / -1;
-    order: 1;
-}
 .reasons__list-item_devils-bridge img {
-    grid-column: 1 / 3;
+    order: -1;
 }
 
 /* Seach hotel */
@@ -239,7 +236,15 @@ img {
 .search-hotel__title{
     font-size: 30px;
     font-weight: 700;
+    margin: 0;
+    padding: 58px 0 41px;
 }
+
+.search-hotel p{
+    margin: 0;
+    padding-bottom: 50px;
+}
+
 .search-hotel_button{
     font-size: 21px;
     background-color: var(--basic-brown);
@@ -436,8 +441,7 @@ img {
 
 .sorting{
     padding: 10px 73px;
-    display: grid;
-    grid-template-columns: 200px max-content 1fr auto;
+    display: flex;
     align-items: center;
 }
 
@@ -509,6 +513,7 @@ img {
 }
 .hotel-results__list{
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 .hotel-results__list p {
@@ -518,30 +523,28 @@ img {
     padding: 28px 73px 30px;
     border-top: 1px solid var(--basic-light-line);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    position: relative;
+    grid-template-columns: 135px auto 110px;
 }
 .hotel-results__item:last-child{
     border-bottom: 1px solid var(--basic-light-line);
 }
 .hotel-results__hotel-wrapper {
-    justify-self: start;
+    padding-left: 29px;
 }
 .hotel-results__rating-wrapper {
-    justify-self: end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.hotel-results__info-wrapper{
-    padding-left: 164px;
-    display: grid;
-    grid-template-columns: 110px 142px;
-    column-gap: 6px;
+.hotel-results__info-wrapper {
+    display: flex;
 }
 
-.hotel-results__info-wrapper p {
+.hotel-results__buttons-wrapper {
+    display: flex;
+}
+
+.hotel-results__info-wrapper p{
     margin: 0;
     /*margin: 17px 0 21px;*/
 }
@@ -549,7 +552,6 @@ img {
 .hotel-results__item-title{
     font-size: 21px;
     font-weight: 700;
-    padding-left: 164px;
     margin: 0;
 }
 
@@ -613,12 +615,5 @@ img {
 }
 .hotel-results__item-stars_2{
     width: 38px;
-}
-
-.hotel-results__hotel-wrapper img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 73px;
 }
 
