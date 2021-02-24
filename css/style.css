@@ -862,7 +862,7 @@ img {
     fill: var(--basic-black);
 }
 
-.sorting__order:active path,
+.sorting__order-item-asc:active path,
 .sorting__order-item-desc:active path {
     fill: var(--vasic-blue);
 }
