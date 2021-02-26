@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
       <a class="logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип City of Sedona"></a>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__list-item menu__list-item_active"><a>Информация</a></li>
+          <li class="menu__list-item menu__list-item_active"><a href="#">Информация</a></li>
           <li class="menu__list-item"><a href="#">Фото и видео</a></li>
           <li class="menu__list-item"><a href="#">Карта штата</a></li>
           <li class="menu__list-item"><a href="catalog.html">Гостиницы</a></li>
@@ -40,7 +40,7 @@
           <li class="reasons__list-item_real-town">
             <div class="reasons__list-item_content">
               <h3 class="reasons__list-item-title">Настоящий<br>городок</h3>
-              <p>&ndash;№1&ndash;</p>
+              <p class="reasons__list-item-number">&mdash;№1&mdash;</p>
               <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
             </div>
             <img class="reasons__image" src="img/image-1.jpg" width="800" height="256" alt="Город Седона">
@@ -67,7 +67,7 @@
           <li class="reasons__list-item_devils-bridge">
             <div class="reasons__list-item_content">
               <h3 class="reasons__list-item-title">Там есть<br>Мост дьявола</h3>
-              <p>&ndash;№2&ndash;</p>
+              <p class="reasons__list-item-number">&mdash;№2&mdash;</p>
               <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
             </div>
             <img class="reasons__image" src="img/image-2.jpg" width="800" height="256" alt="Мост Дьявола">
@@ -77,19 +77,19 @@
             <ul class="reasons__list-other-reasons">
               <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-3">
                 <h3 class="reasons__list-item-title">Небольшая<br>площадь</h3>
-                <p>&ndash;№3&ndash;</p>
+                <p class="reasons__list-item-number">&mdash;№3&mdash;</p>
                 <p>все достопримечательности<br>находятся очень близко</p>
               </li>
 
               <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-4">
                 <h3 class="reasons__list-item-title">Красивая<br>дорога</h3>
-                <p>&ndash;№4&ndash;</p>
+                <p class="reasons__list-item-number">&mdash;№4&mdash;</p>
                 <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
               </li>
 
               <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-5">
                 <h3 class="reasons__list-item-title">Мало<br>туристов</h3>
-                <p>&ndash;№5&ndash;</p>
+                <p class="reasons__list-item-number">&mdash;№5&mdash;</p>
                 <p>большинство едет в гранд каньон<br>и толпится там</p>
               </li>
             </ul>
@@ -103,7 +103,7 @@
         <a class="button search-hotel_button" href="blank.html">Поиск гостиницы в Седоне</a>
         <div class="modal">
           <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
-          <form  class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <form  class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <p class="search-form__item search-form__item-date">
               <label for="modal-arrival-date">Дата заезда:</label>
               <input class="search-form__date-input" id="modal-arrival-date" type="text" name="arrival-date" value="24 апреля 2017" placeholder="24 апреля 2017">
@@ -134,7 +134,7 @@
                 <button class="button__amount-persons button__amount-persons_minus" type="button">
                   <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" fill="#A9A9A9"/></svg>
                 </button>
-                <input class="search-form__person-input" id="modal-children" type="text" name="childrens" value="2" placeholder="0">
+                <input class="search-form__person-input" id="modal-children" type="text" name="childrens" value="0" placeholder="0">
                 <button class="button__amount-persons button__amount-persons_plus" type="button">
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/></svg>
                 </button>
@@ -152,7 +152,7 @@
     <footer class="footer footer_main-page">
         <section class="contacts">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <p>&num;visitsedona</p>
+          <p class="contacts__tag">&num;visitsedona</p>
           <p>ТЕЛ: <a class="contacts__tel" href="tel:+74956660166">+7(495) 666-01-66</a></p>
         </section>
 

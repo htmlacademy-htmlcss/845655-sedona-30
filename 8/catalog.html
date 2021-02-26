@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
         <a class="logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип City of Sedona"></a>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__list-item"><a href="index.html">Информация</a></li>
+            <li class="menu__list-item"><a href="#">Информация</a></li>
             <li class="menu__list-item"><a href="#">Фото и видео</a></li>
             <li class="menu__list-item"><a href="#">Карта штата</a></li>
             <li class="menu__list-item menu__list-item_active"><a>Гостиницы</a></li>
@@ -30,7 +30,7 @@
         <h1 class="visually-hidden">Жилье в городе Седона</h1>
         <section class="hotel-filters">
             <h2 class="visually-hidden">Фильтры по жилью</h2>
-            <form class="filters" action="#" method="GET">
+            <form class="filters" action="https://echo.htmlacademy.ru" method="GET">
                 <div class="filters__wrapper-checkbox">
                     <fieldset class="filters__filter">
                         <legend class="filters__title">Инфраструктура:</legend>
@@ -102,8 +102,8 @@
             </ul>
 
             <div class="sorting__wrapper-order">
-                <a class="sorting__order"><svg class="sorting__order-item-asc" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z"/></svg></a>
-                <a class="sorting__order" href="#"><svg class="sorting__order-item-desc" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11"/></svg></a> 
+                <a class="sorting__order sorting__order-item-asc"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z"/></svg></a>
+                <a class="sorting__order sorting__order-item-desc" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11"/></svg></a> 
             </div>
         </section>
 
