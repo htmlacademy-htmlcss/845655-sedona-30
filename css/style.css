@@ -159,7 +159,7 @@ img {
     height: 57px;
     bottom: -1px;
     left: 0;
-    background-image: url(../img/shape.svg);
+    background-image: url('../img/mask.svg');
     position: absolute;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -294,7 +294,7 @@ img {
     left: 110px;
     width: 75px;
     height: 72px;
-    background-image: url(../img/icon-1.svg);
+    background-image: url('../img/icon-1.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -309,7 +309,7 @@ img {
     left: 110px;
     width: 75px;
     height: 70px;
-    background-image: url(../img/icon-2.svg);
+    background-image: url('../img/icon-2.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -324,7 +324,7 @@ img {
     left: 116px;
     width: 64px;
     height: 77px;
-    background-image: url(../img/icon-3.svg);
+    background-image: url('../img/icon-3.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -518,7 +518,7 @@ img {
 .map {
     width: 1200px;
     height: 594px;
-    background-image: url(../img/map.jpg);
+    background-image: url('../img/map.jpg');
 }
 
 .map iframe {
@@ -634,8 +634,8 @@ img {
 
 .hotel-filters{
     color: var(--basic-white);
-    background-color: var(--basic-brown);
     background-image: url('../img/background.jpg');
+    background-color: var(--basic-brown);
     background-repeat: no-repeat;
     line-height: 21px;
 }
@@ -732,7 +732,7 @@ img {
     top: 1px;
     width: 23px;
     height: 23px;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url('../img/checkbox-off.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -744,7 +744,7 @@ img {
     top: 1px;
     width: 27px;
     height: 23px;
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url('../img/checkbox-on.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -756,7 +756,7 @@ img {
     top: 1px;
     width: 23px;
     height: 23px;
-    background-image: url(../img/checkbox-off-disabled.svg);
+    background-image: url('../img/checkbox-off-disabled.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -769,7 +769,7 @@ img {
     width: 27px;
     height: 23px;
     background-color: transparent;
-    background-image: url(../img/checkbox-on-disabled.svg);
+    background-image: url('../img/checkbox-on-disabled.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -797,7 +797,7 @@ img {
     left: 157px;
     width: 2px;
     height: 22px;
-    background-image: url(../img/line.svg);
+    background-image: url('../img/line.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
