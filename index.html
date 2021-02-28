@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.svg">
@@ -33,14 +33,14 @@
 
       <section class="reasons">
         <h2 class="visually-hidden">Информация о Седоне</h2>
-        <p class="reasons__intro-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+        <p class="reasons__intro-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="reasons__list">
           <li class="reasons__list-item_real-town">
             <div class="reasons__list-item_content">
               <h3 class="reasons__list-item-title">Настоящий<br>городок</h3>
               <p class="reasons__list-item-number">&mdash;№1&mdash;</p>
-              <p>Седона - не аттракцион для туристов, там<br>течёт своя жизнь</p>
+              <p class="reasons__list-item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="reasons__image" src="img/image-1.jpg" width="800" height="256" alt="Город Седона">
           </li>
@@ -49,16 +49,16 @@
             <ul class="reasons__city-list">
               <li class="reasons__city-list-item">
                 <h4 class="reasons__city-list-item-title reasons__city-list-item-title_icon-housing">Жильё</h4>
-                <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="reasons__city-list-item">
                 <h4 class="reasons__city-list-item-title reasons__city-list-item-title_icon-food">Еда</h4>
-                <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="reasons__city-list-item">
                 <div class=" reasons__city-list-icon_3"></div>
                 <h4 class="reasons__city-list-item-title reasons__city-list-item-title_icon-souvenirs">Сувениры</h4>
-                <p>Не только китайского, но и местного<br>производства!</p>
+                <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -67,29 +67,29 @@
             <div class="reasons__list-item_content">
               <h3 class="reasons__list-item-title">Там есть<br>Мост дьявола</h3>
               <p class="reasons__list-item-number">&mdash;№2&mdash;</p>
-              <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+              <p class="reasons__list-item-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <img class="reasons__image" src="img/image-2.jpg" width="800" height="256" alt="Мост Дьявола">
           </li> 
           
           <li>
             <ul class="reasons__list-other-reasons">
-              <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-3">
+              <li class="reasons__list-item_content reasons__list-item_background_grey">
                 <h3 class="reasons__list-item-title">Небольшая<br>площадь</h3>
                 <p class="reasons__list-item-number">&mdash;№3&mdash;</p>
-                <p>все достопримечательности<br>находятся очень близко</p>
+                <p class="reasons__list-item-description">все достопримечательности<br>находятся очень близко</p>
               </li>
 
-              <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-4">
+              <li class="reasons__list-item_content reasons__list-item_background_grey">
                 <h3 class="reasons__list-item-title">Красивая<br>дорога</h3>
                 <p class="reasons__list-item-number">&mdash;№4&mdash;</p>
-                <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
+                <p class="reasons__list-item-description">ехать в седону из лас-вегаса совсем<br>не скучно!</p>
               </li>
 
-              <li class="reasons__list-item_content reasons__list-item_background_grey reasons__list-item_reason-5">
+              <li class="reasons__list-item_content reasons__list-item_background_grey">
                 <h3 class="reasons__list-item-title">Мало<br>туристов</h3>
                 <p class="reasons__list-item-number">&mdash;№5&mdash;</p>
-                <p>большинство едет в гранд каньон<br>и толпится там</p>
+                <p class="reasons__list-item-description">большинство едет в гранд каньон<br>и толпится там</p>
               </li>
             </ul>
           </li>
@@ -142,8 +142,11 @@
             <button class="search-form__item button search-form__button" type="submit">Найти</button>
           </form>   
         </div>
+
         <div class="map">
-          <img src="img/map.jpg" width="1200" height="594" alt="Местонахождение города Седона на карте">
+          <!-- <img src="img/map.jpg" width="1200" height="594" alt="Седона, шатат Аризона 86336, США на карте"> -->
+          <!-- Подписать alt="Седона, шатат Аризона 86336, США на карте"-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780817.1464052907!2d-111.9453397427905!3d34.81887173667714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1614457149059!5m2!1sru!2sru" width="1200" height="594"></iframe>
         </div>
       </section>
     </main>
