@@ -737,6 +737,11 @@ img {
     background-position: 0 0;
   }
 
+  .filters__checkbox-input:focus + .filters__checkbox-label::before{
+    outline: 2px solid var(--basic-transparent-white);
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5); */
+  }
+
   .filters__checkbox-input:checked + .filters__checkbox-label::after {
     content: "";
     position: absolute;
@@ -760,6 +765,8 @@ img {
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+ 
 
   .filters__checkbox-input:checked:disabled + .filters__checkbox-label::after {
     content: "";
