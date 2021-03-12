@@ -57,22 +57,22 @@ modalSearchForm.addEventListener("submit", function(evt){
     }
 });
 
-buttonMinusAdults.addEventListener('click', function() {
+buttonMinusAdults.addEventListener("click", function() {
     if (inputAdults.value > 1) {
       inputAdults.value = +inputAdults.value - 1;
     }
   });
 
-  buttonPlusAdults.addEventListener('click', function() {
+  buttonPlusAdults.addEventListener("click", function() {
     inputAdults.value = +inputAdults.value + 1;
   });
 
-  buttonMinusChildrens.addEventListener('click', function() {
-    if (inputChildrens.value > 1) {
+  buttonMinusChildrens.addEventListener("click", function() {
+    if (inputChildrens.value >= 1) {
       inputChildrens.value = +inputChildrens.value - 1;
     }
   });
 
-   buttonPlusChildrens.addEventListener('click', function() {
+   buttonPlusChildrens.addEventListener("click", function() {
     inputChildrens.value = +inputChildrens.value + 1;
   });
