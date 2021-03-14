@@ -17,6 +17,8 @@ let storageDepartureDate = "";
 let storageAdults = "";
 let storageChildren = "";
 
+modal.classList.remove("modal_show");
+
 try {
     storageArrivalDate = localStorage.getItem("arrival-date");
     storageDepartureDate = localStorage.getItem("departure-date");
@@ -28,9 +30,9 @@ try {
 
 buttonSearchHotel.addEventListener("click", function(evt){
     evt.preventDefault();
-    modal.classList.toggle("modal-show");
+    modal.classList.toggle("modal_show");
     modalSearchForm.classList.remove("modal_error");
-    if (modal.classList.contains("modal-show")) {
+    if (modal.classList.contains("modal_show")) {
         inputArrivalDate.focus();
         if (storageArrivalDate && storageDepartureDate && storageAdults && storageChildren) {
             inputArrivalDate.value = storageArrivalDate;
