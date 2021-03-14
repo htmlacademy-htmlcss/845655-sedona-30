@@ -182,7 +182,7 @@ img {
 
 .greeting {
     background-color: var(--basic-white);
-    background-image: url('../img/background-photo.jpg');
+    background-image: url("../img/background-photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -197,7 +197,7 @@ img {
     height: 57px;
     bottom: -1px;
     left: 0;
-    background-image: url('../img/mask.svg');
+    background-image: url("../img/mask.svg");
     position: absolute;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -330,7 +330,7 @@ img {
     left: 110px;
     width: 75px;
     height: 72px;
-    background-image: url('../img/icon-1.svg');
+    background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -345,7 +345,7 @@ img {
     left: 110px;
     width: 75px;
     height: 70px;
-    background-image: url('../img/icon-2.svg');
+    background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -360,7 +360,7 @@ img {
     left: 116px;
     width: 64px;
     height: 77px;
-    background-image: url('../img/icon-3.svg');
+    background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -417,7 +417,7 @@ img {
     box-shadow: var(--box-shadow-modal);
 }
 
-.modal-show{
+.modal_show{
     display: block;
     animation: bounce 0.6s;
 }
@@ -564,7 +564,7 @@ img {
 .map {
     width: 1200px;
     height: 594px;
-    background-image: url('../img/map.jpg');
+    background-image: url("../img/map.jpg");
 }
 
 .map iframe {
@@ -679,7 +679,7 @@ img {
 
 .hotel-filters{
     color: var(--basic-white);
-    background-image: url('../img/background.jpg');
+    background-image: url("../img/background.jpg");
     background-color: var(--basic-brown);
     background-repeat: no-repeat;
     line-height: 21px;
@@ -773,14 +773,14 @@ img {
     top: 1px;
     width: 23px;
     height: 23px;
-    background-image: url('../img/checkbox-off.svg');
+    background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .filters__checkbox-input:focus + .filters__checkbox-label::before{
     outline: 2px solid var(--basic-transparent-white);
-    /* box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5); */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
   }
 
   .filters__checkbox-input:checked + .filters__checkbox-label::after {
@@ -790,7 +790,7 @@ img {
     top: 1px;
     width: 27px;
     height: 23px;
-    background-image: url('../img/checkbox-on.svg');
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -802,7 +802,7 @@ img {
     top: 1px;
     width: 23px;
     height: 23px;
-    background-image: url('../img/checkbox-off-disabled.svg');
+    background-image: url("../img/checkbox-off-disabled.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -815,7 +815,7 @@ img {
     width: 27px;
     height: 23px;
     background-color: transparent;
-    background-image: url('../img/checkbox-on-disabled.svg');
+    background-image: url("../img/checkbox-on-disabled.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -843,7 +843,7 @@ img {
     left: 157px;
     width: 2px;
     height: 22px;
-    background-image: url('../img/line.svg');
+    background-image: url("../img/line.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1078,7 +1078,7 @@ img {
     width: 19px;
     height: 17px;
     margin-top: 5px;
-    background-image: url('../img/star.svg');
+    background-image: url("../img/star.svg");
     background-repeat: space;
 }
 
